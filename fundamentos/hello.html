@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <canvas width="600" height="600"></canvas>
+        <script>
+            let canvas = document.querySelector('canvas');
+            let conteudo = canvas.getContext('2d');
+            
+            conteudo.fillStyle = 'blue'
+            //conteudo.fillRect(100, 100, 400, 400);
+
+            conteudo.lineWidth = 4;
+            conteudo.beginPath();
+            conteudo.rect(100,100,400,400);
+            conteudo.stroke();
+   
+            conteudo.beginPath();
+            conteudo.arc(300,300,100,0,Math.PI * 2);
+            conteudo.stroke();
+
+
+
+
+            let ano = 2024;
+            let proximoAno = ano + 1;
+
+            let jantar = "salada";
+            let frase = "hoje nos vamos ter" + jantar + "para o jantar";
+
+            function digaAlgo(parametro){
+                console.log(parametro);
+            }
+            digaAlgo("ola pessoas");
+
+            function adicionar(a,b){
+                return a + b;
+            }
+
+            let result = adicionar(3, 4)
+            console.log(result)
+            
+            let multiplicacao = (a, b) => {
+                return a * b;
+            }
+            console.log(multiplicacao(5,7));
+
+        </script>
+    </body>
+</html>
