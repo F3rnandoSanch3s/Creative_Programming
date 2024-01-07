@@ -1,1 +1,2 @@
 sup!
+lembre-se de baixar os pacotes canvas-sketch
